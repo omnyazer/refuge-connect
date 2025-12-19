@@ -4,8 +4,6 @@
 
 @section('content')
     <div class="rc-page">
-        <section class="rc-hero">
-            <h2 class="rc-404-title">Page non trouvée.</h2>
-        </section>
+        <h1 class="rc-404-title">Page non trouvée</h1>
     </div>
 @endsection
