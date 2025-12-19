@@ -8,7 +8,7 @@
             <h1>{{ $animal->name }}</h1>
 
             <div class="rc-animal-detail-body">
-                <img src="{{ $animal->photo }}" alt="{{ $animal->name }}" class="rc-animal-detail-photo">
+                <img src="{{ asset($animal->photo) }}" alt="{{ $animal->name }}" class="rc-animal-detail-photo">
 
                 <div class="rc-animal-detail-text">
                     <p><strong>Espèce :</strong> {{ $animal->species }}</p>

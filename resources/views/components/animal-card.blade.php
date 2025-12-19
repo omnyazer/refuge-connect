@@ -1,6 +1,6 @@
 <article class="rc-card">
     <a href="{{ route('animals.show', ['id' => $animal->id]) }}">
-        <img src="{{ $animal->photo }}" alt="{{ $animal->name }}">
+        <img src="{{ asset($animal->photo) }}" alt="{{ $animal->name }}">
     </a>
 
     <h2>{{ $animal->name }}</h2>
