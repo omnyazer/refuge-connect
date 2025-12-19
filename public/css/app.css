@@ -11,7 +11,6 @@ main {
     flex: 1;
 }
 
-
 a {
     color: #52c9ff;
     text-decoration: none;
@@ -27,20 +26,29 @@ a:hover {
     background-color: #f5f8fa;
 }
 
-.rc-header {
+.rc-header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: #f5f8fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 
+.rc-header-logo img,
 .rc-logo {
     height: 40px;
+}
+
+.rc-nav {
+    text-align: right;
 }
 
 .rc-nav a {
     margin-left: 20px;
 }
+
 
 .rc-hero {
     text-align: center;
@@ -85,6 +93,7 @@ a:hover {
     margin-right: 10px;
 }
 
+
 .rc-animal-detail {
     max-width: 900px;
     margin: 40px auto;
@@ -112,18 +121,21 @@ a:hover {
 .rc-animal-detail-text p {
     margin: 8px 0;
 }
+
 .rc-footer {
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 .rc-footer-inner {
     max-width: 900px;
     margin: 0 auto;
     padding: 15px 0;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     text-align: center;
     font-size: 12px;
 }
+
+
 .rc-404-title {
     font-size: 32px;
     font-weight: 600;
