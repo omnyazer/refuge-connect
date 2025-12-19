@@ -75,6 +75,7 @@ a:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
+        flex-wrap: wrap;
     
 }
 
@@ -84,7 +85,7 @@ a:hover {
     text-align: left;
     border-radius: 32px;
     box-shadow: 0 0 0 1px #e5edf5;
-    width: 320px;
+    width: 270px;
     display: flex;
     flex-direction: column;
 }
