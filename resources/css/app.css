@@ -3,6 +3,9 @@ html, body {
 }
 
 body {
+    margin: 0;
+    background-color: #f5f8fa;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
 }
