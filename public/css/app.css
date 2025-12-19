@@ -68,16 +68,19 @@ a:hover {
 
 .rc-card {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 20px;
     text-align: left;
+    border-radius: 25px;       
+    box-shadow: 0 0 0 1px #e5edf5;  
 }
 
 .rc-card img {
-    display: block;
     width: 180px;
     height: 180px;
     object-fit: cover;
-    margin-bottom: 10px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 .rc-card h3 {
@@ -133,7 +136,6 @@ a:hover {
     text-align: center;
     font-size: 12px;
 }
-
 
 .rc-404-title {
     font-size: 32px;

@@ -4,14 +4,6 @@
 
 @section('content')
     <div class="rc-page">
-        <header class="rc-header">
-            <img src="{{ asset('images/logo (1).png') }}" alt="RefugeConnect" class="rc-logo">
-            <nav class="rc-nav">
-                <a href="{{ route('home') }}">Accueil</a>
-                <a href="{{ route('animals.create') }}">Ajouter un animal</a>
-            </nav>
-        </header>
-
         <section class="rc-animal-detail">
             <h2>{{ $animal->name }}</h2>
 
