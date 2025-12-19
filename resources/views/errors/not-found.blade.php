@@ -3,6 +3,9 @@
 @section('title', 'Page non trouvée')
 
 @section('content')
-    <h2>Page non trouvée</h2>
-    <p>La page que vous cherchez n’existe pas.</p>
+    <div class="rc-page">
+        <section class="rc-hero">
+            <h2 class="rc-404-title">Page non trouvée.</h2>
+        </section>
+    </div>
 @endsection

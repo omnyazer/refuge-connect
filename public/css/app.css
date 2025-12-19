@@ -1,0 +1,130 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+a {
+    color: #52c9ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.rc-page {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f5f8fa;
+}
+
+.rc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rc-logo {
+    height: 40px;
+}
+
+.rc-nav a {
+    margin-left: 20px;
+}
+
+.rc-hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rc-hero h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.rc-animals-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rc-card {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: left;
+}
+
+.rc-card img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.rc-card h3 {
+    margin: 5px 0;
+}
+
+.rc-card-description {
+    font-size: 12px;
+}
+
+.rc-card-actions a {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.rc-animal-detail {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.rc-animal-detail h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.rc-animal-detail-body {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-animal-detail-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.rc-animal-detail-text p {
+    margin: 8px 0;
+}
+.rc-footer {
+    background-color: #ffffff; 
+}
+
+.rc-footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background-color: #ffffff; 
+    text-align: center;
+    font-size: 12px;
+}
+.rc-404-title {
+    font-size: 32px;
+    font-weight: 600;
+}

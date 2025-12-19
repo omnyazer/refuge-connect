@@ -13,7 +13,7 @@ class AnimalController extends Controller
             'species' => 'Chat',
             'age' => 2,
             'description' => 'Coquillette est un chat joueur et affectueux.',
-            'photo' => '/images/coquillette.jpg', 
+            'photo' => '/images/coquillette.png',
         ]);
 
         return redirect()->route('animals.index');

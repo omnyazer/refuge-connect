@@ -3,11 +3,27 @@
 @section('title', $animal->name)
 
 @section('content')
-    <h2>{{ $animal->name }}</h2>
-    <p>Espèce : {{ $animal->species }}</p>
-    <p>Âge : {{ $animal->age }} ans</p>
-    <p>{{ $animal->description }}</p>
+    <div class="rc-page">
+        <header class="rc-header">
+            <img src="{{ asset('images/logo (1).png') }}" alt="RefugeConnect" class="rc-logo">
+            <nav class="rc-nav">
+                <a href="{{ route('home') }}">Accueil</a>
+                <a href="{{ route('animals.create') }}">Ajouter un animal</a>
+            </nav>
+        </header>
 
-    {{-- plus tard on affichera la vraie photo --}}
-    <p><a href="{{ route('animals.index') }}">← Retour à la liste</a></p>
+        <section class="rc-animal-detail">
+            <h2>{{ $animal->name }}</h2>
+
+            <div class="rc-animal-detail-body">
+                <img src="{{ $animal->photo }}" alt="{{ $animal->name }}" class="rc-animal-detail-photo">
+
+                <div class="rc-animal-detail-text">
+                    <p><strong>Espèce :</strong> {{ $animal->species }}</p>
+                    <p><strong>Âge :</strong> {{ $animal->age }} ans</p>
+                    <p>{{ $animal->description }}</p>
+                </div>
+            </div>
+        </section>
+    </div>
 @endsection
