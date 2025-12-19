@@ -68,26 +68,27 @@ a:hover {
 .rc-hero h1 {
     font-size: 32px;
     margin: 0;
-    font-weight: 900 !important;
+    font-weight: 600 ;
 }
 
 .rc-animals-list {
     display: flex;
     gap: 20px;
     justify-content: center;
+    
 }
 
 .rc-card {
     background-color: #ffffff;
-    padding: 5px 5px 50px;   
+    padding: 5px 5px 50px;
     text-align: left;
     border-radius: 32px;
     box-shadow: 0 0 0 1px #e5edf5;
     width: 320px;
     display: flex;
     flex-direction: column;
-    max-height: 370px;
 }
+
 
 
 .rc-card img {
@@ -114,10 +115,17 @@ a:hover {
 }
 
 
+.rc-card-actions a {
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 12px;
+    color: #52c9ff;   
+}
+
 .rc-card h2 {
     margin: 8px 0 6px;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .rc-card p {

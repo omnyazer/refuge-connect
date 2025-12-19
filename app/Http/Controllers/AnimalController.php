@@ -6,18 +6,19 @@ use App\Models\Animal;
 
 class AnimalController extends Controller
 {
-    public function createStatic()
-    {
-        Animal::create([
-            'name'        => 'Coquillette',
-            'species'     => 'Chat',
-            'age'         => 2,
-            'description' => 'Coquillette est un chat joueur et affectueux.',
-            'photo'       => '/images/coquillette.png',
-        ]);
+ public function createStatic()
+{
+    Animal::create([
+        'name'        => 'Coquillette',
+        'species'     => 'Chien',
+        'age'         => 3,
+        'description' => "Une Shiba Inu vive et joyeuse, toujours prête à jouer et à explorer. Coquillette est curieuse, intelligente et très expressive, avec un petit caractère indépendant mais plein de tendresse pour ceux qu’elle aime.",
+        'photo'       => '/images/coquillette.png', 
+    ]);
 
-        return redirect()->route('animals.index');
-    }
+    return redirect()->route('home');
+}
+
 
     public function editStatic(int $id)
     {
@@ -27,7 +28,7 @@ class AnimalController extends Controller
             'name' => $animal->name . ' modifié',
         ]);
 
-        return redirect()->route('animals.index');
+        return redirect()->route('home');
     }
 
     public function delete(int $id)
@@ -35,7 +36,7 @@ class AnimalController extends Controller
         $animal = Animal::findOrFail($id);
         $animal->delete();
 
-        return redirect()->route('animals.index');
+        return redirect()->route('home');
     }
 
     public function show(int $id)
