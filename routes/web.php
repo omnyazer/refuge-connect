@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\AnimalController;
 
-Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/animals', [IndexController::class, 'index'])->name('home');
 
 Route::prefix('animals')->group(function () {
     Route::get('/', [IndexController::class, 'index'])->name('animals.index');          
@@ -17,4 +17,3 @@ Route::prefix('animals')->group(function () {
 Route::fallback(function () {
     return response()->view('errors.not-found', [], 404);
 });
-

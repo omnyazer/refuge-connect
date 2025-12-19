@@ -5,7 +5,7 @@
 @section('content')
     <div class="rc-page">
         <section class="rc-animal-detail">
-            <h2>{{ $animal->name }}</h2>
+            <h1>{{ $animal->name }}</h1>
 
             <div class="rc-animal-detail-body">
                 <img src="{{ $animal->photo }}" alt="{{ $animal->name }}" class="rc-animal-detail-photo">

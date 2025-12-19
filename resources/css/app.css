@@ -14,10 +14,17 @@ main {
     flex: 1;
 }
 
-a {
-    color: #52c9ff;
+.rc-nav a {
+    color: #000000;    
+    margin-left: 20px;
     text-decoration: none;
+
 }
+
+.rc-nav a:hover {
+    text-decoration: underline;
+}
+
 
 a:hover {
     text-decoration: underline;
@@ -58,9 +65,10 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.rc-hero h2 {
+.rc-hero h1 {
     font-size: 32px;
     margin: 0;
+    font-weight: 900 !important;
 }
 
 .rc-animals-list {
@@ -71,40 +79,74 @@ a:hover {
 
 .rc-card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 5px 5px 50px;   
     text-align: left;
-    border-radius: 25px;       
-    box-shadow: 0 0 0 1px #e5edf5;  
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px #e5edf5;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    max-height: 370px;
 }
+
 
 .rc-card img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 20px;
     display: block;
-    margin: 0 auto 15px;
+    width: 100%;           
+    height: 220px;         
+    object-fit: cover;   
+    border-radius: 24px;
+    margin: 0 0 16px;
 }
 
+
+
+.rc-link-primary {
+    color: #52c9ff;
+}
+
+.rc-link-danger {
+    color: #52c9ff;
+}
+
+.rc-card-actions a:hover {
+    text-decoration: underline;
+}
+
+
 .rc-card h3 {
-    margin: 5px 0;
+    margin: 8px 0 6px;
+    font-size: 24px;
+    font-weight: 900;    
+}
+
+.rc-card p {
+    margin: 0px 0;  
 }
 
 .rc-card-description {
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 8px;
+    flex: 1;           
+}
+
+.rc-card-actions {
+    margin-top: 10px;
+    text-align: center;    
 }
 
 .rc-card-actions a {
-    font-size: 12px;
-    margin-right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 12px;       
 }
+
 
 .rc-animal-detail {
     max-width: 900px;
     margin: 40px auto;
 }
-
-.rc-animal-detail h2 {
+.rc-animal-detail h1 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;

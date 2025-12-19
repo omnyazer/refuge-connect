@@ -4,7 +4,7 @@
             <img src="{{ asset('images/logo (1).png') }}" alt="RefugeConnect" class="rc-logo">
         </div>
         <nav class="rc-nav">
-            <a href="{{ route('home') }}">Accueil</a>
+            <a href="/animals">Accueil</a>
             <a href="{{ route('animals.create') }}">Ajouter un animal</a>
         </nav>
     </div>
